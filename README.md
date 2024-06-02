@@ -183,5 +183,68 @@ Pseudocode:
     return NULL
 
 </div>
+<div align="left">
+
+
+  Q4
+
+
+
+  
+###Algorithm to Create a Circular Linked List
+
+
+
+
+1.Input:
+
+    -An array of values arr
+    
+    -The size of the array n
+Output:
+
+    -A pointer to the head node of the newly created circular linked list
+
+####Algorithm:
+
+
+1.Check for Empty Input:
+
+      -If n is 0, return NULL.
+2.Create the Head Node:
+
+      -Create a new node with the value arr[0].
+      -Set head to point to this new node.
+      -Set current to head.
+3.Create Remaining Nodes:
+
+    For each value from arr[1] to arr[n-1]:
+      Create a new node with the current value.
+      Set current->next to point to this new node.
+      Move current to this new node.
+4.Make the List Circular:
+
+      Set current->next to head to link the last node back to the head.
+5.Return the Head:
+
+      Return head.
+Pseudocode:
+
+    function createCircularLinkedList(arr, n):
+      if n == 0 then
+        return NULL
+
+      head ← new Node(arr[0])
+      current ← head
+
+      for i ← 1 to n-1 do:
+        newNode ← new Node(arr[i])
+        current.next ← newNode
+        current ← newNode
+
+      current.next ← head
+      return head
+</div>
+
 </div>
 </div>
