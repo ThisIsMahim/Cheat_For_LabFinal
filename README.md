@@ -135,5 +135,53 @@ If low > high, return -1
     return -1
 
 </div>
+<div align="left">
+
+
+
+  <b>Q3 </b>
+Search Algorithm for a Linked List
+
+  Input:
+
+A pointer to the head node of the linked list (head)
+The value to search for (value)
+
+  Output:
+A pointer to the node containing the value if found, otherwise NULL
+
+  ###Algorithm:
+
+
+1.Initialize:
+    Set a pointer current to the head of the linked list (head).
+  
+2.Traverse the Linked List:
+  
+  i.Repeat while current is not NULL:
+
+    If the value of current is equal to the target value:
+    Return current.
+  
+    Move current to the next node (current = current->next).
+
+3.End of List:
+    
+    If the loop terminates without finding the value, return NULL to indicate the value is not present in the linked list.
+
+
+Pseudocode:
+  
+      function searchLinkedList(head, value):
+    current ← head
+
+    while current ≠ NULL do:
+        if current.value == value then:
+            return current
+        current ← current.next
+
+    return NULL
+
+</div>
 </div>
 </div>
